@@ -14,10 +14,6 @@ _Efficient nonlocal linear image denoising: Bilevel optimisation with Nonequispa
 
 Jupyter notebooks with code for all the results are included.
 
-% > Neighbourhood:ANOVA - Scalar [Projection - Eigs Plots - ★].ipynb
-% > Neighbourhood:ANOVA - Scalar [Projection - Eigs Plots - Small sigma - ★].ipynb
-% > Eig Plots - Several Images.ipynb
-
 1. Figure 2 compares the eigenvalues of the original and preconditioned systems as well as the resulting condition number for different values of $\sigma$. 
 See notebook [`Eigs plots - Main.ipynb`](Eigs%20plots%20-%20Main.ipynb)
 for the main panels, [`Eigs plots - Small sigma.ipynb`](Eigs%20plots%20-%20Small%20sigma.ipynb) for an additional computational study when $\sigma < 10$, and [`Eig plots - Several images.ipynb`](Eig%20plots%20-%20Several%20images.ipynb) for a test on the computational bounds around the spectra.
