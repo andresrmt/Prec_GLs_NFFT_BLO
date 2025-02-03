@@ -36,12 +36,12 @@ See notebook [`CG - All preconditioners.ipynb`](http://localhost:8889/notebooks/
 7. Figure 7 is a comparative display of the number of CG iterations for different regularisation values $\lambda \in \Lambda$ and each choice of preconditioner.
 See notebook [`CG - All preconditioners.ipynb`](http://localhost:8889/notebooks/CG%20-%20All%20preconditioners.ipynb).
 The selected image corresponds to $n=775$ as it showcases many methods still working for not too small $\lambda$. 
-A fully reproducible version is presented in [`CG - All preconditioners - Repr & Chol`](CG%20-%20All%20preconditioners%20-%20Repr%20%26%20Chol.ipynb), which also contains a test for the randomised pivoted Cholesky approximation as a preconditioner. [$\ast$]
+A fully reproducible version is presented in [`CG - All preconditioners - Repr & Chol`](CG%20-%20All%20preconditioners%20-%20Repr%20%26%20Chol.ipynb), which also contains a test for the randomised pivoted Cholesky approximation as a preconditioner. [👁️‍🗨️]
 
 8. Figures 8 and 9 display the results of the batch training using bilevel optimisation on the included dataset.
-See notebook [`Scalar Training - ParaCats.ipynb`](8%20Scalar%20Training%20-%20ParaCats.ipynb). 
+See notebook [`Scalar Training - ParaCats.ipynb`](8%20Scalar%20Training%20-%20ParaCats.ipynb). [👁️‍🗨️]
 
-9. Joint parameter optimisation (both $\lambda$ and $h = \sigma^{-2}$) is performed for improved quality in [Bilevel_2_Params - ParaCats](Bilevel_2_Params%20-%20ParaCats.ipynb).
+9. Joint parameter optimisation (both $\lambda$ and $h = \sigma^{-2}$) is performed for improved quality in [Bilevel_2_Params - ParaCats](Bilevel_2_Params%20-%20ParaCats.ipynb). [👁️‍🗨️]
 
 ---
 ## Dependencies
@@ -49,7 +49,7 @@ See notebook [`Scalar Training - ParaCats.ipynb`](8%20Scalar%20Training%20-%20Pa
 The original code used the following standard libraries:
 `NumPy 1.23.0`, `Pandas 1.4.2`, `SciPy 1.11.1`.
 
-The notebooks with a [$\ast$] marker were adapted to
+The notebooks with a [👁️‍🗨️] marker were adapted to
 `NumPy 1.26.4`, `Pandas 2.2.3`, `SciPy 1.15.1` 
 
 
