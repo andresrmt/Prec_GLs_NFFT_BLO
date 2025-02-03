@@ -35,24 +35,33 @@ See notebook [`CG - All preconditioners.ipynb`](http://localhost:8889/notebooks/
 
 7. Figure 7 is a comparative display of the number of CG iterations for different regularisation values $\lambda \in \Lambda$ and each choice of preconditioner.
 See notebook [`CG - All preconditioners.ipynb`](http://localhost:8889/notebooks/CG%20-%20All%20preconditioners.ipynb).
-The selected image corresponds to $n=775$ as it showcases many methods still working for not to small $\lambda$.
+The selected image corresponds to $n=775$ as it showcases many methods still working for not too small $\lambda$. 
+A fully reproducible version is presented in [`CG - All preconditioners - Repr & Chol`](CG%20-%20All%20preconditioners%20-%20Repr%20%26%20Chol.ipynb), which also contains a test for the randomised pivoted Cholesky approximation as a preconditioner. [$\ast$]
 
 8. Figures 8 and 9 display the results of the batch training using bilevel optimisation on the included dataset.
 See notebook [`Scalar Training - ParaCats.ipynb`](8%20Scalar%20Training%20-%20ParaCats.ipynb). 
 
+9. Joint parameter optimisation (both $\lambda$ and $h = \sigma^{-2}$) is performed for improved quality in [Bilevel_2_Params - ParaCats](Bilevel_2_Params%20-%20ParaCats.ipynb).
 
 ---
 ## Dependencies
 
-We use the following standard libraries:
-`NumPy 1.23.0`, `Pandas 1.4.2`, `SciPy 1.11.1`
+The original code used the following standard libraries:
+`NumPy 1.23.0`, `Pandas 1.4.2`, `SciPy 1.11.1`.
+
+The notebooks with a [$\ast$] marker were adapted to
+`NumPy 1.26.4`, `Pandas 2.2.3`, `SciPy 1.15.1` 
+
+
 
 A copy of the [`NFFT4ANOVA`](NFFT4ANOVA) library by Theresa Wagner (TU Chemnitz) is included in the folder. It depends on the [`FastAdjacency`](https://github.com/dominikbuenger/FastAdjacency) package by Dominik Alfke and the Julia interface of the [`NFFT3`](https://www-user.tu-chemnitz.de/~potts/nfft/) library. Refer to [`FastAdjacency`](https://github.com/dominikbuenger/FastAdjacency) for a comprehensive set of installation instructions.
+
+In [`CG - All preconditioners - Repr & Chol`](CG%20-%20All%20preconditioners%20-%20Repr%20%26%20Chol.ipynb), a copy of `rpcholesky` and `accelerated_rpcholesky` was adapted from the [`Randomly Pivoted Cholesky`](
+https://github.com/eepperly/Randomly-Pivoted-Cholesky/tree/main) library by Yifan Chen, Ethan N. Epperly, Joel A. Tropp, and Robert J. Webber. Details on the algorithms are available in [[1]](https://doi.org/10.1002/cpa.22234) and [[2]](https://doi.org/10.48550/arXiv.2410.03969).
 
 
 
 For better visualisation of the notebooks, the **codefolding for Jupyter** [extension](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/) is recommended.
-
 
 
 
